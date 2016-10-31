@@ -1,0 +1,2 @@
+var startTime=new Date();function currentTime(){var a=Math.floor((new Date()-startTime)/100)/10;if (a%1==0) a+=".0";document.getElementById("endTime").innerHTML=a;}window.onload=function(){clearTimeout(loopTime);}
+document.write('<span id="texttime">Thời gian tải trang Star Trường: <span id="endTime">0.0</span>s</span> ');var loopTime=setInterval("currentTime()",100);
